@@ -1,7 +1,6 @@
-html,
 body {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* Navbar */
@@ -52,6 +51,7 @@ body {
     transform: rotate(0deg) translate(200px) rotate(0deg);
     box-shadow: 10px 10px 100px #52bfc1;
   }
+
   100% {
     transform: rotate(360deg) translate(200px) rotate(-360deg);
     box-shadow: 10px 10px 100px #52bfc1;
@@ -69,6 +69,7 @@ body {
     transform: rotate(0deg) translate(200px) rotate(0deg);
     box-shadow: 10px 10px 100px #52bfc1;
   }
+
   100% {
     transform: rotate(-360deg) translate(200px) rotate(360deg);
     box-shadow: 10px 10px 100px #52bfc1;
@@ -86,6 +87,7 @@ body {
     transform: rotate(0deg) translate(100px) rotate(0deg);
     box-shadow: 10px 10px 100px #52bfc1;
   }
+
   100% {
     transform: rotate(-360deg) translate(100px) rotate(360deg);
     box-shadow: 10px 10px 100px #52bfc1;
@@ -115,33 +117,24 @@ body {
 
 /* Présentation */
 
-.background_presentation {
-  position: relative;
-  color: #272a2c;
-  height: 32rem;
-  background-color: whitesmoke;
-}
-
 .container_presentation {
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 5%;
+  margin-left: 10%;
   width: 60%;
-  height: 23rem;
-  background-color: #272a2c;
-  margin-top: 50px;
+  height: 90vh;
+  font-size: 25px;
+  text-align: justify;
   border-radius: 7px;
 }
 
 .container_presentation h2 {
-  text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  margin-left: 5%;
 }
 
 .presentation {
-  background-color: white;
+  color: white;
   border-radius: 7px;
   padding: 7px;
   margin: 0 auto;
@@ -149,79 +142,37 @@ body {
   height: 60%;
 }
 
-.presentation ul {
-  padding-left: 35px;
-  margin: 10px;
-}
-
 .presentation p {
-  font-weight: bold;
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-#li1 {
-  padding-top: 20px;
+#p2_presentation {
+  margin-bottom: 7%;
 }
 
-/* Compétences */
-
-.block_competences {
-  height: 49rem;
-  background-color: #272a2c;
-  position: relative;
-}
-
-.competences {
-  background-color: white;
-  position: absolute;
-  top: 11%;
-  width: 60%;
-  left: 50%;
-  height: 80%;
-  transform: translateX(-50%);
-  border-radius: 7px;
-}
-
-.competences h2 {
-  text-align: center;
-  color: #272a2c;
-  font-size: 30px;
-}
-
-#languages_skills {
-  width: 90% !important;
-  height: 78% !important;
-  margin: 0 auto;
-  padding: 5px;
-  background-color: #272a2c;
-  border-radius: 7px;
+.presentation a {
+  color: #52bfc1;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* CV */
 
-.CV {
-  background-color: white;
-  height: 13rem;
-  position: relative;
-}
-
-.CV h2 {
-  text-align: center;
-  color: #272a2c;
-  margin-left: 2rem;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 0;
+#CV {
+  font-size: 20px;
+  padding: 15px 25px;
+  margin-left: 10%;
+  background-color: #52bfc1;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
 }
 
 .CV a {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 18px;
   padding: 15px 25px;
-  background-color: orange;
+  background-color: #52bfc1;
   border-radius: 30px;
   text-decoration: none;
   color: white;
@@ -235,6 +186,7 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 1300px) {
+
   .container_presentation,
   .competences {
     width: 70%;
@@ -274,6 +226,7 @@ body {
   }
 
 }
+
 @media screen and (max-width: 869px) {
   .container_presentation {
     top: 1%;
@@ -301,29 +254,29 @@ body {
     width: 70%;
     text-align: center;
   }
-  
+
   .container_presentation {
     top: 8%;
     height: 68%;
   }
-  
+
   .presentation {
     height: 67%;
   }
-  
+
   .container_presentation,
   .competences {
     width: 90%;
   }
-  
+
   .competences {
     height: 80%;
   }
-  
+
   .block_competences {
     height: 30rem;
   }
-  
+
   #languages_skills {
     height: 70% !important;
   }
@@ -339,7 +292,7 @@ body {
   .container_presentation {
     height: 77% !important;
   }
-  
+
   .presentation p {
     font-size: 1.17rem;
   }
@@ -353,13 +306,13 @@ body {
   .background_presentation {
     height: 25rem;
   }
-  
+
   .container_presentation {
     margin-top: 0;
     top: 11% !important;
     height: 78%;
   }
-  
+
   .presentation p {
     font-size: 1rem !important;
   }
@@ -369,18 +322,19 @@ body {
   h1 {
     font-size: 2.4rem !important;
   }
-  
+
   .container_nom p {
     font-size: 1.2rem;
   }
-  
+
   .presentation p {
     font-size: 0.85rem !important;
   }
 }
+
 @media screen and (max-width: 485px) {
   .container_nom p {
-    font-size: 1.11rem ;
+    font-size: 1.11rem;
   }
 }
 
@@ -468,6 +422,7 @@ body {
   .container_nom h1 {
     font-size: 2rem !important;
   }
+
   .container_nom p {
     margin-top: 0;
     font-size: 1rem;

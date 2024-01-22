@@ -11,6 +11,7 @@
 <body>
     <footer>
         <div class="container_footer">
+            <hr>
             <p>Copyright © 2024 Nathan LEGRAND</p>
             <p><a target="_blank"
                     href="https://fr.linkedin.com/in/nathan-legrand-83411b255?trk=people-guest_people_search-card"><svg
