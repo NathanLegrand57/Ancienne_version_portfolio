@@ -113,16 +113,16 @@ body {
   transform: translateX(-50%);
 }
 
-/* Formations */
+/* Présentation */
 
-.formations_diplomes {
+.background_presentation {
   position: relative;
   color: #272a2c;
   height: 32rem;
   background-color: whitesmoke;
 }
 
-.block_formation {
+.container_presentation {
   position: absolute;
   top: 3%;
   left: 50%;
@@ -134,27 +134,27 @@ body {
   border-radius: 7px;
 }
 
-.block_formation h2 {
+.container_presentation h2 {
   text-align: center;
   color: white;
   font-size: 30px;
 }
 
-.parcours {
+.presentation {
   background-color: white;
   border-radius: 7px;
-  padding-bottom: 5px;
+  padding: 7px;
   margin: 0 auto;
   width: 90%;
   height: 60%;
 }
 
-.parcours ul {
+.presentation ul {
   padding-left: 35px;
   margin: 10px;
 }
 
-.parcours li {
+.presentation p {
   font-weight: bold;
   margin-top: 8px;
   font-size: 20px;
@@ -235,12 +235,12 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 1300px) {
-  .block_formation,
+  .container_presentation,
   .competences {
     width: 70%;
   }
 
-  .parcours {
+  .presentation {
     height: 65%;
   }
 
@@ -265,26 +265,26 @@ body {
 }
 
 @media screen and (max-width: 983px) {
-  .block_formation {
+  .container_presentation {
     height: 75%;
   }
 
-  .parcours {
+  .presentation {
     height: 72%;
   }
 
 }
 @media screen and (max-width: 869px) {
-  .block_formation {
+  .container_presentation {
     top: 1%;
     height: 79%;
   }
 
-  .parcours {
+  .presentation {
     height: 72%;
   }
 
-  .parcours li {
+  .presentation p {
     font-size: 1.2rem;
   }
 }
@@ -302,16 +302,16 @@ body {
     text-align: center;
   }
   
-  .block_formation {
+  .container_presentation {
     top: 8%;
     height: 68%;
   }
   
-  .parcours {
+  .presentation {
     height: 67%;
   }
   
-  .block_formation,
+  .container_presentation,
   .competences {
     width: 90%;
   }
@@ -330,17 +330,17 @@ body {
 }
 
 @media screen and (max-width: 736px) {
-  .block_formation {
+  .container_presentation {
     height: 72%;
   }
 }
 
 @media screen and (max-width: 674px) {
-  .block_formation {
+  .container_presentation {
     height: 77% !important;
   }
   
-  .parcours li {
+  .presentation p {
     font-size: 1.17rem;
   }
 }
@@ -350,17 +350,17 @@ body {
     font-size: 1.4rem;
   }
 
-  .formations_diplomes {
+  .background_presentation {
     height: 25rem;
   }
   
-  .block_formation {
+  .container_presentation {
     margin-top: 0;
     top: 11% !important;
     height: 78%;
   }
   
-  .parcours li {
+  .presentation p {
     font-size: 1rem !important;
   }
 }
@@ -374,7 +374,7 @@ body {
     font-size: 1.2rem;
   }
   
-  .parcours li {
+  .presentation p {
     font-size: 0.85rem !important;
   }
 }
@@ -396,32 +396,32 @@ body {
     text-align: center;
   }
 
-  .formations_diplomes {
+  .background_presentation {
     height: 19rem;
   }
 
-  .block_formation {
+  .container_presentation {
     margin-top: 0;
     top: 7%;
     width: 98% !important;
     height: 85%;
   }
 
-  .block_formation h2 {
+  .container_presentation h2 {
     margin: 2%;
   }
 
-  .parcours {
+  .presentation {
     height: 70%;
     width: 96%;
   }
 
-  .parcours ul {
+  .presentation ul {
     padding-left: 3%;
     margin-top: 1% !important;
   }
 
-  .parcours li {
+  .presentation p {
     font-size: 0.81rem !important;
   }
 
@@ -484,20 +484,20 @@ body {
     border-radius: 200px;
   }
 
-  .block_formation h2,
+  .container_presentation h2,
   .competences h2 {
     font-size: 1.2rem;
   }
 
-  .parcours {
+  .presentation {
     height: 73%;
   }
 
-  .parcours li {
+  .presentation p {
     font-size: 0.8rem !important;
   }
 
-  .block_formation {
+  .container_presentation {
     padding-left: 0.6%;
     /* padding-right: 0.8%; */
   }
@@ -521,7 +521,7 @@ body {
     font-size: 2rem !important;
   }
 
-  .parcours li {
+  .presentation p {
     font-size: 0.7rem !important;
   }
 }
@@ -531,20 +531,20 @@ body {
     font-size: 1.8rem !important;
   }
 
-  .formations_diplomes {
+  .background_presentation {
     height: 20rem;
   }
 
-  .block_formation {
+  .container_presentation {
     top: 7%;
     height: 85%;
   }
 
-  .parcours {
+  .presentation {
     height: 80%;
   }
 
-  .parcours li {
+  .presentation p {
     margin-top: 1%;
     font-size: 0.75rem !important;
   }

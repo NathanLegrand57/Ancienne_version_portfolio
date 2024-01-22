@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <p id="top_page"></p>
     <?php
     require("navbar.php");
     ?>
@@ -23,35 +24,30 @@
             <p>BTS SIO - Spécialité SLAM</p>
         </div>
     </div>
-    <div class="formations_diplomes">
-        <div class="container_formation">
-            <div class="block_formation">
-                <h2>Mon parcours</h2>
-                <div class="parcours">
-                    <ul>
-                        <li id="li1">2022 - 2023 : 1ère année de Brevet de Technicien Supérieur : Services Informatiques
-                            aux
-                            Organisations, spécialité Solutions Logicielles et Applications Métiers (BTS SIO SLAM)</li>
-                        <li>2020 - 2022 : Première et Terminale en STI2D (Sciences et Technologie de l'Industrie et du
-                            Développement Durable)</li>
-                        <li>2022 : Baccalauréat avec mention assez bien</li>
-                        <li>2019 : Brevet des collèges avec mention assez bien</li>
-                    </ul>
-                </div>
+    <div class="background_presentation">
+        <div class="container_presentation">
+            <h2>Qui suis-je ?</h2>
+            <div class="presentation">
+                <p>Je m'appelle <strong>Nathan Legrand</strong>, je suis étudiant en 2ème année de <strong>BTS
+                        SIO</strong> (Services Informatiques aux Organisations), option <strong>SLAM</strong> (Solutions
+                    Logicielles et Applications Métiers), au sein de l'<em>Institut Informatique Appliquée de
+                        Saint-Nazaire</em>. J'aime particulièrement faire de la veille informatique, des projets avec
+                    des Raspberry Pi mais également du piano en autodidacte.</p>
             </div>
         </div>
     </div>
-    <div class="block_competences">
+    <!-- <div class="block_competences">
         <div class="competences">
-            <h2>Compétences</h2>
+            <h2>Maîtrise des différents langages de programmation</h2>
             <canvas id="languages_skills"></canvas>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
     <script src="./js/graphic.js"></script>
+-->
     <div class="CV">
         <h2>Vous souhaitez voir mon CV ?</h2>
-        <a href="#">Cliquer ici</a>
+        <a href="#" onclick="alert('Désolé ! Le CV n\'est actuellement pas disponible')">Cliquer ici</a>
     </div>
 
     <?php

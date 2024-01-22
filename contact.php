@@ -18,7 +18,7 @@
     ?>
 
     <div class="responsive_h1_title">
-        <h1>Vous souhaitez plus de renseignements ?</h1>
+        <h1>Vous avez des questions ?</h1>
     </div>
 
     <?php
