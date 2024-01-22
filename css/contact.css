@@ -1,0 +1,265 @@
+/* Navbar */
+#contact {
+  color: orange;
+}
+
+#contact::after {
+  background-color: orange;
+}
+
+/* Body */
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.container_form h2 {
+  display: inline-block;
+  font-size: 40px;
+  text-transform: uppercase;
+  border-bottom: 3px solid white;
+  margin-bottom: 7%;
+}
+
+.container_nom_prenom {
+  overflow: hidden;
+}
+
+.container_nom {
+  float: left;
+  width: 48%;
+}
+
+.container_prenom {
+  float: right;
+  width: 48%;
+}
+
+@media screen and (min-width: 1400px) {
+  .responsive_h2_title {
+    display: none;
+  }
+}
+
+#invalid, #valid {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1399px) {
+  .responsive_h2_title {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+
+  .container_form h2 {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .responsive_h2_title {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  #invalid, #valid {
+    font-size: 2rem;
+  }
+
+  .container_form {
+    width: 60% !important;
+  }
+
+  .container_form h2 {
+    margin-top: 0;
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container_form h2 {
+    font-size: 1.7rem;
+  }
+
+  .container_form {
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container_form h2 {
+    font-size: 1.6rem;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #normal_h2_title {
+    display: none;
+  }
+
+  .responsive_h2_title {
+    display: inline-block;
+  }
+
+  .container_form {
+    width: 90% !important;
+  }
+
+  .container_form label {
+    font-size: 1.2rem !important;
+  } 
+
+  .container_form h2 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+  }
+
+  #h2_part2 {
+    margin-bottom: 15%;
+    margin-top: 1%;
+  }
+
+  .container_form input[type="submit"] {
+    margin: 0 auto;
+    font-size: 1.1rem !important;
+    width: 80%;
+    padding: 12px !important;
+  }
+
+  #rc-imageselect,
+    .g-recaptcha {
+      margin-top: 4%;
+        transform:scale(0.77);
+        transform-origin:0;
+        transform:scale(0.77);
+        transform-origin:0 0;
+        -webkit-transform:scale(0.77);
+        transform:scale(0.77);
+        -webkit-transform-origin:0 0;
+        transform-origin:0 0;
+    }
+}
+
+@media screen and (max-width: 321px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #invalid, #valid {
+    font-size: 1.5rem;
+  }
+
+  .container_form h2 {
+    font-size: 1.3rem;
+    border-bottom: 2px solid white;
+  }
+
+  .container_form input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 0.8rem !important;
+  }
+}
+
+.container_form {
+  margin: 0 auto;
+  margin-top: 4%;
+  width: 50%;
+}
+
+.titre_form {
+  text-align: center;
+}
+
+.container_form label,
+p {
+  font-size: 25px;
+}
+
+.container_form input[type="text"],
+input[type="email"],
+textarea {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  font-size: 15px;
+  color: black;
+  resize: none;
+}
+
+.container_form textarea {
+  padding-bottom: 25%;
+}
+
+.container_form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+  font-family: "Montserrat", sans-serif;
+  background-color: aqua;
+  color: black;
+  padding: 12px 20px;
+  font-size: 25px;
+}
+
+.container_form input[type="submit"]:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition-duration: 0.5s;
+}
+
+#valid {
+  text-align: center;
+  color: rgb(54, 230, 54);
+}
+
+#invalid {
+  text-align: center;
+  color: red;
+  animation-name: invalid;
+}
+
+/*
+@keyframes invalid {
+  0% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+} */

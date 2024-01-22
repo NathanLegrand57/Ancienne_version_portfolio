@@ -1,0 +1,570 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+#accueil {
+  color: orange;
+}
+
+#accueil::after {
+  background-color: orange;
+}
+
+/* Header */
+
+.container3 {
+  z-index: 10;
+  position: relative;
+  background-color: #272a2c;
+  height: 93.5vh;
+  width: 100%;
+}
+
+.container_nom {
+  width: 100%;
+}
+
+#cercle1,
+#cercle2,
+#cercle3 {
+  z-index: -1;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  background: #52bfc1;
+  filter: blur(60px);
+  box-shadow: 10px 10px 100px #52bfc1;
+}
+
+#cercle1 {
+  left: calc(50% - 100px);
+  top: calc(25% - 100px);
+  animation: animateCircle1 15s linear infinite;
+}
+
+@keyframes animateCircle1 {
+  0% {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+    box-shadow: 10px 10px 100px #52bfc1;
+  }
+  100% {
+    transform: rotate(360deg) translate(200px) rotate(-360deg);
+    box-shadow: 10px 10px 100px #52bfc1;
+  }
+}
+
+#cercle2 {
+  left: calc(0% - 100px);
+  top: calc(50% - 100px);
+  animation: animateCircle2 15s linear infinite;
+}
+
+@keyframes animateCircle2 {
+  0% {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+    box-shadow: 10px 10px 100px #52bfc1;
+  }
+  100% {
+    transform: rotate(-360deg) translate(200px) rotate(360deg);
+    box-shadow: 10px 10px 100px #52bfc1;
+  }
+}
+
+#cercle3 {
+  left: calc(80% - 100px);
+  top: calc(-5% - 100px);
+  animation: animateCircle3 15s linear infinite;
+}
+
+@keyframes animateCircle3 {
+  0% {
+    transform: rotate(0deg) translate(100px) rotate(0deg);
+    box-shadow: 10px 10px 100px #52bfc1;
+  }
+  100% {
+    transform: rotate(-360deg) translate(100px) rotate(360deg);
+    box-shadow: 10px 10px 100px #52bfc1;
+  }
+}
+
+.container3 h1 {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container3 p {
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Formations */
+
+.formations_diplomes {
+  position: relative;
+  color: #272a2c;
+  height: 32rem;
+  background-color: whitesmoke;
+}
+
+.block_formation {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 23rem;
+  background-color: #272a2c;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+.block_formation h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.parcours {
+  background-color: white;
+  border-radius: 7px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  width: 90%;
+  height: 60%;
+}
+
+.parcours ul {
+  padding-left: 35px;
+  margin: 10px;
+}
+
+.parcours li {
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+#li1 {
+  padding-top: 20px;
+}
+
+/* Compétences */
+
+.block_competences {
+  height: 49rem;
+  background-color: #272a2c;
+  position: relative;
+}
+
+.competences {
+  background-color: white;
+  position: absolute;
+  top: 11%;
+  width: 60%;
+  left: 50%;
+  height: 80%;
+  transform: translateX(-50%);
+  border-radius: 7px;
+}
+
+.competences h2 {
+  text-align: center;
+  color: #272a2c;
+  font-size: 30px;
+}
+
+#languages_skills {
+  width: 90% !important;
+  height: 78% !important;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #272a2c;
+  border-radius: 7px;
+}
+
+/* CV */
+
+.CV {
+  background-color: white;
+  height: 13rem;
+  position: relative;
+}
+
+.CV h2 {
+  text-align: center;
+  color: #272a2c;
+  margin-left: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.CV a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  padding: 15px 25px;
+  background-color: orange;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.CV a:hover {
+  color: #272a2c;
+  transition-duration: 0.5s;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1300px) {
+  .block_formation,
+  .competences {
+    width: 70%;
+  }
+
+  .parcours {
+    height: 65%;
+  }
+
+  .competences {
+    height: 60%;
+  }
+}
+
+#languages_skills {
+  height: 75% !important;
+}
+
+@media screen and (max-width: 1025px) {
+  .block_competences {
+    height: 35rem;
+  }
+
+  .competences {
+    top: 14%;
+    height: 72%;
+  }
+}
+
+@media screen and (max-width: 983px) {
+  .block_formation {
+    height: 75%;
+  }
+
+  .parcours {
+    height: 72%;
+  }
+
+}
+@media screen and (max-width: 869px) {
+  .block_formation {
+    top: 1%;
+    height: 79%;
+  }
+
+  .parcours {
+    height: 72%;
+  }
+
+  .parcours li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  .container_nom h1 {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  h1 {
+    width: 70%;
+    text-align: center;
+  }
+  
+  .block_formation {
+    top: 8%;
+    height: 68%;
+  }
+  
+  .parcours {
+    height: 67%;
+  }
+  
+  .block_formation,
+  .competences {
+    width: 90%;
+  }
+  
+  .competences {
+    height: 80%;
+  }
+  
+  .block_competences {
+    height: 30rem;
+  }
+  
+  #languages_skills {
+    height: 70% !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .block_formation {
+    height: 72%;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .block_formation {
+    height: 77% !important;
+  }
+  
+  .parcours li {
+    font-size: 1.17rem;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .container_nom p {
+    font-size: 1.4rem;
+  }
+
+  .formations_diplomes {
+    height: 25rem;
+  }
+  
+  .block_formation {
+    margin-top: 0;
+    top: 11% !important;
+    height: 78%;
+  }
+  
+  .parcours li {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.4rem !important;
+  }
+  
+  .container_nom p {
+    font-size: 1.2rem;
+  }
+  
+  .parcours li {
+    font-size: 0.85rem !important;
+  }
+}
+@media screen and (max-width: 485px) {
+  .container_nom p {
+    font-size: 1.11rem ;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  h1 {
+    width: 80%;
+    font-size: 2.3rem !important;
+  }
+
+  .container_nom p {
+    font-size: 1.3rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  .formations_diplomes {
+    height: 19rem;
+  }
+
+  .block_formation {
+    margin-top: 0;
+    top: 7%;
+    width: 98% !important;
+    height: 85%;
+  }
+
+  .block_formation h2 {
+    margin: 2%;
+  }
+
+  .parcours {
+    height: 70%;
+    width: 96%;
+  }
+
+  .parcours ul {
+    padding-left: 3%;
+    margin-top: 1% !important;
+  }
+
+  .parcours li {
+    font-size: 0.81rem !important;
+  }
+
+  #li1 {
+    padding-top: 2%;
+  }
+
+  .block_competences {
+    height: 21rem !important;
+  }
+
+  .competences {
+    top: 8%;
+    width: 98% !important;
+    height: 83%;
+  }
+
+  #languages_skills {
+    height: 79% !important;
+    margin: 0 auto;
+    width: 96% !important;
+  }
+
+  .competences h2 {
+    margin: 2%;
+    font-size: 1.2rem !important;
+  }
+
+  .CV h2 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .CV a {
+    font-size: 0.9rem;
+    margin: 0 auto;
+    width: 22%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .container_nom h1 {
+    font-size: 2rem !important;
+  }
+  .container_nom p {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+
+  #cercle1,
+  #cercle2,
+  #cercle3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+  }
+
+  .block_formation h2,
+  .competences h2 {
+    font-size: 1.2rem;
+  }
+
+  .parcours {
+    height: 73%;
+  }
+
+  .parcours li {
+    font-size: 0.8rem !important;
+  }
+
+  .block_formation {
+    padding-left: 0.6%;
+    /* padding-right: 0.8%; */
+  }
+
+  #languages_skills {
+    width: 98% !important;
+  }
+
+  .CV {
+    height: 10rem;
+  }
+
+  .CV h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media screen and (max-width: 370px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .parcours li {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .formations_diplomes {
+    height: 20rem;
+  }
+
+  .block_formation {
+    top: 7%;
+    height: 85%;
+  }
+
+  .parcours {
+    height: 80%;
+  }
+
+  .parcours li {
+    margin-top: 1%;
+    font-size: 0.75rem !important;
+  }
+
+  .block_competences {
+    height: 17rem !important;
+  }
+
+  .competences {
+    top: 15% !important;
+    height: 70%;
+  }
+
+  #languages_skills {
+    height: 75% !important;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .container_nom h1 {
+    font-size: 1.8rem !important;
+  }
+}

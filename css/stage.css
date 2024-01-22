@@ -1,0 +1,259 @@
+/* Navbar */
+
+#stage {
+  color: orange;
+}
+
+#stage::after {
+  background-color: orange;
+}
+
+/* Body */
+
+body {
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.part1,
+.part2,
+.part3 {
+  margin: 33px 15%;
+  text-align: justify;
+}
+
+#power_platform {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.banniere_exakis {
+  margin-top: 3%;
+  background-image: url("../assets/exakis_nelite.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: white;
+  height: 300px;
+}
+
+#p6 {
+  margin-bottom: 0;
+}
+
+.infos_exakis {
+  text-align: center;
+}
+
+.create_activity {
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#activity,
+#cdc_activites {
+  width: 95%;
+}
+
+#activity {
+  margin-top: 2%;
+}
+
+#sharepoint {
+  margin-top: 1%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1060px) {
+  .part1 p,
+  .part2 p,
+  .part3 p,
+  li {
+    font-size: 25px;
+  }
+
+  #infos_exakis {
+    margin: 3% 5%;
+    width: 90%;
+  }
+
+  .part1 h2,
+  .part2 h2,
+  .part3 h2 {
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 3px solid white;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .banniere_exakis {
+    margin-top: 33px;
+    height: 200px;
+  }
+
+  #infos_exakis {
+    margin: 3% 5%;
+    width: 90%;
+  }
+  .part1,
+  .part2,
+  .part3 {
+    margin-top: 0px;
+  }
+
+  .part1 h2,
+  .part2 h2,
+  .part3 h2 {
+    font-size: 40px;
+    display: inline-block;
+    border-bottom: 3px solid white;
+  }
+
+  .part1 p,
+  .part2 p,
+  .part3 p {
+    font-size: 25px;
+  }
+
+  .part1 li {
+    font-size: 24.5px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  #power_platform {
+    margin: 3% 5%;
+    width: 90%;
+  }
+  #infos_exakis {
+    margin: 3% 5%;
+    width: 90%;
+  }
+  .part1,
+  .part2,
+  .part3 {
+    margin: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .part1,
+  .part2,
+  .part3 {
+    margin: 0px 80px;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .part1,
+  .part2,
+  .part3 {
+    margin: 0px 60px;
+  }
+
+  .part1 h2,
+  .part2 h2,
+  .part3 h2 {
+    border-bottom: 2px solid white;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .part1 h2,
+  .part2 h2,
+  .part3 h2 {
+    font-size: 35px;
+  }
+  .part1 p,
+  .part2 p,
+  .part3 p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .part1 h2,
+  .part2 h2,
+  .part3 h2 {
+    font-size: 30px;
+  }
+  .part1 p,
+  .part2 p,
+  .part3 p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .banniere_exakis {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .part1,
+  .part2,
+  .part3 {
+    margin: 0px 40px;
+    text-align: center;
+  }
+
+  .part1 h2,
+  .part2 h2 {
+    font-size: 21px;
+  }
+  .part1 p,
+  .part2 p,
+  .part3 p {
+    font-size: 17px;
+  }
+
+  .part1 li {
+    font-size: 17px;
+    text-align: initial;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .part1 h2,
+  .part2 h2,
+  .part3 h2 {
+    font-size: 19px;
+  }
+
+  .part1 p,
+  .part2 p,
+  .part3 p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .part1 h2,
+  .part2 h2,
+  .part3 h2 {
+    font-size: 18px;
+  }
+  .part1 p,
+  .part2 p,
+  .part3 p {
+    font-size: 16px;
+  }
+}
