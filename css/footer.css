@@ -5,21 +5,20 @@ footer {
 
 footer hr {
     margin-bottom: 4%;
-    width: 80%;
+    /* width: 80%; */
 }
 
-@media screen and (max-width: 769px) {
+
+/* @media screen and (max-width: 769px) {
     footer {
-        font-size: 0.625rem ;
+        font-size: 0.625rem;
     }
-}
-.container_footer {
-    padding: 1%;
-}
+} */
+
 
 footer p {
     text-align: center;
-    font-size: 100%;
+    font-size: 2rem;
 }
 
 svg {
@@ -27,9 +26,51 @@ svg {
     background-color: white;
     padding: 4px;
     border-radius: 33%;
+    width: 32px;
+    height: 32px;
 }
 
 footer a {
     padding: 5px;
     text-align: center;
 }
+
+/* Responsive */
+
+@media (max-width: 1920px) {
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    footer p {
+        font-size: 1rem;
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* xl */
+@media (max-width: 1440px) {}
+
+/* lg */
+@media (max-width: 1024px) {}
+
+/* md */
+@media (max-width: 768px) {}
+
+/* sm */
+@media (max-width: 640px) {}
+
+/* xs */
+@media (max-width: 475px) {}

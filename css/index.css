@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -20,10 +20,6 @@ body {
   position: relative;
   background-color: #272a2c;
   height: 93.5vh;
-  width: 100%;
-}
-
-.container_nom {
   width: 100%;
 }
 
@@ -96,7 +92,7 @@ body {
 
 .container3 h1 {
   position: absolute;
-  font-size: 50px;
+  font-size: 6rem;
   color: white;
   margin: 0;
   top: 20%;
@@ -107,7 +103,7 @@ body {
 .container3 p {
   position: absolute;
   color: white;
-  font-size: 25px;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   top: 30%;
@@ -118,37 +114,28 @@ body {
 /* Présentation */
 
 .container_presentation {
-  margin-top: 5%;
-  margin-left: 10%;
-  width: 60%;
-  height: 90vh;
-  font-size: 25px;
-  text-align: justify;
-  border-radius: 7px;
-}
-
-.container_presentation h2 {
-  color: white;
-  font-size: 40px;
-  margin-left: 5%;
+  width: 100%;
 }
 
 .presentation {
+  text-align: justify;
+  margin-left: 10%;
   color: white;
-  border-radius: 7px;
-  padding: 7px;
-  margin: 0 auto;
-  width: 90%;
-  height: 60%;
+  width: 60%;
+}
+
+.presentation h2 {
+  color: white;
+  font-size: 4rem;
 }
 
 .presentation p {
   margin-top: 8px;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 #p2_presentation {
-  margin-bottom: 7%;
+  margin-bottom: 90px;
 }
 
 .presentation a {
@@ -160,20 +147,11 @@ body {
 /* CV */
 
 #CV {
-  font-size: 20px;
-  padding: 15px 25px;
-  margin-left: 10%;
+  font-size: 2.5rem;
+  padding: 20px 50px;
+  margin-left: 20%;
   background-color: #52bfc1;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-}
-
-.CV a {
-  font-size: 18px;
-  padding: 15px 25px;
-  background-color: #52bfc1;
-  border-radius: 30px;
+  border-radius: 50px;
   text-decoration: none;
   color: white;
 }
@@ -185,7 +163,90 @@ body {
 
 /* Responsive */
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 1920px) {
+  .container3 h1 {
+    font-size: 5rem;
+  }
+
+  .container3 p {
+    font-size: 2.5rem;
+  }
+
+  .presentation {
+    width: 80%;
+  }
+
+  .presentation h2 {
+    font-size: 3rem;
+  }
+
+  .presentation p {
+    font-size: 2.2rem;
+  }
+
+  #CV {
+    font-size: 2rem;
+  }
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container3 h1 {
+    font-size: 3rem;
+  }
+
+  .container3 p {
+    font-size: 1.5rem;
+  }
+
+  .presentation {
+    width: 80%;
+  }
+
+  .presentation h2 {
+    font-size: 2rem;
+  }
+
+  .presentation p {
+    font-size: 1.5rem;
+  }
+
+  #p2_presentation {
+    margin-bottom: 70px;
+  }
+
+  #CV {
+    font-size: 1.2rem;
+    padding: 20px 25px;
+  }
+}
+
+/* xl */
+@media (max-width: 1440px) {}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container3 h1 {
+    font-size: 2rem;
+  }
+
+  .container3 p {
+    font-size: 1.1rem;
+  }
+
+
+}
+
+/* md */
+@media (max-width: 768px) {}
+
+/* sm */
+@media (max-width: 640px) {}
+
+/* xs */
+@media (max-width: 475px) {}
+
+/* @media screen and (max-width: 1300px) {
 
   .container_presentation,
   .competences {
@@ -198,21 +259,6 @@ body {
 
   .competences {
     height: 60%;
-  }
-}
-
-#languages_skills {
-  height: 75% !important;
-}
-
-@media screen and (max-width: 1025px) {
-  .block_competences {
-    height: 35rem;
-  }
-
-  .competences {
-    top: 14%;
-    height: 72%;
   }
 }
 
@@ -350,10 +396,6 @@ body {
     text-align: center;
   }
 
-  .background_presentation {
-    height: 19rem;
-  }
-
   .container_presentation {
     margin-top: 0;
     top: 7%;
@@ -455,11 +497,7 @@ body {
   .container_presentation {
     padding-left: 0.6%;
     /* padding-right: 0.8%; */
-  }
-
-  #languages_skills {
-    width: 98% !important;
-  }
+/* }
 
   .CV {
     height: 10rem;
@@ -468,10 +506,10 @@ body {
   .CV h2 {
     font-size: 1.2rem;
   }
-}
+} */
 
 
-@media screen and (max-width: 370px) {
+/* @media screen and (max-width: 370px) {
   h1 {
     font-size: 2rem !important;
   }
@@ -522,4 +560,4 @@ body {
   .container_nom h1 {
     font-size: 1.8rem !important;
   }
-}
+} */

@@ -15,7 +15,7 @@
     require("navbar.php");
     ?>
 
-    <div class="container3">
+    <div class="container3 responsive">
         <div id="cercle1" class="cercle1"></div>
         <div id="cercle2" class="cercle2"></div>
         <div id="cercle3" class="cercle3"></div>
@@ -24,9 +24,10 @@
             <p>BTS SIO - Spécialité SLAM</p>
         </div>
     </div>
-    <div class="container_presentation">
-        <h2>Qui suis-je ?</h2>
-        <div class="presentation">
+    <div class="presentation_container responsive">
+
+        <div class="presentation ">
+            <h2>Qui suis-je ?</h2>
             <p>Je m'appelle <strong>Nathan Legrand</strong>, j'ai 19 ans et je suis actuellement en deuxième année
                 de <strong>BTS SIO</strong> (Services Informatiques aux Organisations), spécialité <strong>SLAM</strong>
                 (Solutions

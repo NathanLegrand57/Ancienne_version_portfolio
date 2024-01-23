@@ -10,7 +10,7 @@
 
 <body>
     <footer>
-        <div class="container_footer">
+        <div class="container_footer responsive">
             <hr>
             <p>Copyright © 2024 Nathan LEGRAND</p>
             <p><a target="_blank"

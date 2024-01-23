@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200;1,400&display=swap");
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -9,7 +10,6 @@ body {
 /* Navbar */
 
 .navbar {
-  /* height: 60px; */
   position: relative;
   font-size: 150%;
   z-index: 1000;
@@ -18,6 +18,7 @@ body {
 .navbar a {
   text-decoration: none;
   color: white;
+  font-size: 3rem;
 }
 
 .navbar a::after {
@@ -32,7 +33,7 @@ body {
 }
 
 #nom_navbar {
-  left: 10%;
+  left: 2%;
 }
 
 #nom_navbar:hover {
@@ -43,17 +44,77 @@ body {
   background-color: orange;
 }
 
-@media screen and (min-width: 1000px) {
-  #responsive_nav {
-    display: none;
+/* @media screen and (min-width: 1000px) {} */
+
+#responsive_nav {
+  display: none;
+}
+
+#nom_navbar,
+#contact,
+#accueil,
+#stage {
+  position: absolute;
+  top: 30%;
+}
+
+#accueil {
+  right: 670px;
+}
+
+#stage {
+  right: 350px;
+}
+
+#contact {
+  right: 100px;
+}
+
+.navbar a:hover::after {
+  transform: scale(1);
+}
+
+/* } */
+
+/* Responsive */
+
+.responsive {
+  max-width: 2360px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px red;
+}
+
+@media (max-width: 1920px) {
+  .responsive {
+    max-width: 1536px;
   }
 
-  #nom_navbar,
-  #contact,
-  #accueil,
+  .navbar a {
+    font-size: 2.5rem;
+  }
+
+  #accueil {
+    right: 550px;
+  }
+
   #stage {
-    position: absolute;
-    top: 30%;
+    right: 270px;
+  }
+
+  #contact {
+    right: 50px;
+  }
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .responsive {
+    max-width: 1440px;
+  }
+
+  .navbar a {
+    font-size: 1.7rem;
   }
 
   #accueil {
@@ -61,21 +122,64 @@ body {
   }
 
   #stage {
-    right: 250px;
+    right: 220px;
   }
 
   #contact {
-    right: 100px;
-  }
-
-  .navbar a:hover::after {
-    transform: scale(1);
+    right: 50px;
   }
 }
 
-/* Responsive */
+/* xl */
+@media (max-width: 1440px) {
+  .responsive {
+    max-width: 1024px;
+  }
+}
 
-@media screen and (max-width: 1000px) {
+/* lg */
+@media (max-width: 1024px) {
+  .responsive {
+    max-width: 768px;
+  }
+
+  .navbar a {
+    font-size: 1.25rem;
+  }
+
+  #nom_navbar {
+    left: 5%;
+  }
+
+  #accueil {
+    right: 5%;
+  }
+
+
+}
+
+/* md */
+@media (max-width: 768px) {
+  .responsive {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .responsive {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
   #def_navbar {
     display: none;
   }
@@ -168,4 +272,4 @@ body {
   .hover .bar3 {
     background-color: red;
   }
-}
+} */

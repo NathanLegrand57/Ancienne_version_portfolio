@@ -24,7 +24,7 @@
 
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar responsive">
 
         <a id="nom_navbar" href="index.php">Nathan LEGRAND</a>
 
