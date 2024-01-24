@@ -27,8 +27,8 @@ body {
 #cercle1,
 #cercle2,
 #cercle3 {
-  z-index: -1;
-  position: absolute;
+  z-index: -1; 
+  position: fixed;
   width: 250px;
   height: 250px;
   border-radius: 125px;
@@ -281,6 +281,16 @@ body {
 
 /* sm */
 @media (max-width: 640px) {
+  #cercle1,
+  #cercle2,
+  #cercle3 {
+    width: 100x;
+    height: 100px;
+    border-radius: 125px;
+    filter: blur(60px);
+    box-shadow: 10px 10px 100px #52bfc1;
+  }
+
   .container3 h1 {
     font-size: 1.5rem;
   }
@@ -309,18 +319,22 @@ body {
   #CV {
     font-size: 0.8rem;
     padding: 10px 20px;
+    margin-left: 35%;
+
   }
 }
 
 /* xs */
 @media (max-width: 475px) {
   .container3 h1 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    text-align: center;
   }
 
   .container3 p {
-    font-size: 0.7rem;
-    transform: translate(-75px, 0px);
+    font-size: 0.8rem;
+    /* transform: translate(-73px, 0px); */
+    text-align: center;
   }
 
   .presentation {
@@ -344,319 +358,3 @@ body {
     padding: 7px 15px;
   }
 }
-
-/* @media screen and (max-width: 1300px) {
-
-  .container_presentation,
-  .competences {
-    width: 70%;
-  }
-
-  .presentation {
-    height: 65%;
-  }
-
-  .competences {
-    height: 60%;
-  }
-}
-
-@media screen and (max-width: 983px) {
-  .container_presentation {
-    height: 75%;
-  }
-
-  .presentation {
-    height: 72%;
-  }
-
-}
-
-@media screen and (max-width: 869px) {
-  .container_presentation {
-    top: 1%;
-    height: 79%;
-  }
-
-  .presentation {
-    height: 72%;
-  }
-
-  .presentation p {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 806px) {
-  .container_nom h1 {
-    width: 80%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  h1 {
-    width: 70%;
-    text-align: center;
-  }
-
-  .container_presentation {
-    top: 8%;
-    height: 68%;
-  }
-
-  .presentation {
-    height: 67%;
-  }
-
-  .container_presentation,
-  .competences {
-    width: 90%;
-  }
-
-  .competences {
-    height: 80%;
-  }
-
-  .block_competences {
-    height: 30rem;
-  }
-
-  #languages_skills {
-    height: 70% !important;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .container_presentation {
-    height: 72%;
-  }
-}
-
-@media screen and (max-width: 674px) {
-  .container_presentation {
-    height: 77% !important;
-  }
-
-  .presentation p {
-    font-size: 1.17rem;
-  }
-}
-
-@media screen and (max-width: 636px) {
-  .container_nom p {
-    font-size: 1.4rem;
-  }
-
-  .background_presentation {
-    height: 25rem;
-  }
-
-  .container_presentation {
-    margin-top: 0;
-    top: 11% !important;
-    height: 78%;
-  }
-
-  .presentation p {
-    font-size: 1rem !important;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  h1 {
-    font-size: 2.4rem !important;
-  }
-
-  .container_nom p {
-    font-size: 1.2rem;
-  }
-
-  .presentation p {
-    font-size: 0.85rem !important;
-  }
-}
-
-@media screen and (max-width: 485px) {
-  .container_nom p {
-    font-size: 1.11rem;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  h1 {
-    width: 80%;
-    font-size: 2.3rem !important;
-  }
-
-  .container_nom p {
-    font-size: 1.3rem;
-    width: 70%;
-    text-align: center;
-  }
-
-  .container_presentation {
-    margin-top: 0;
-    top: 7%;
-    width: 98% !important;
-    height: 85%;
-  }
-
-  .container_presentation h2 {
-    margin: 2%;
-  }
-
-  .presentation {
-    height: 70%;
-    width: 96%;
-  }
-
-  .presentation ul {
-    padding-left: 3%;
-    margin-top: 1% !important;
-  }
-
-  .presentation p {
-    font-size: 0.81rem !important;
-  }
-
-  #li1 {
-    padding-top: 2%;
-  }
-
-  .block_competences {
-    height: 21rem !important;
-  }
-
-  .competences {
-    top: 8%;
-    width: 98% !important;
-    height: 83%;
-  }
-
-  #languages_skills {
-    height: 79% !important;
-    margin: 0 auto;
-    width: 96% !important;
-  }
-
-  .competences h2 {
-    margin: 2%;
-    font-size: 1.2rem !important;
-  }
-
-  .CV h2 {
-    margin-left: 0;
-    text-align: center;
-    font-size: 1.4rem;
-  }
-
-  .CV a {
-    font-size: 0.9rem;
-    margin: 0 auto;
-    width: 22%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 447px) {
-  .container_nom h1 {
-    font-size: 2rem !important;
-  }
-
-  .container_nom p {
-    margin-top: 0;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 376px) {
-
-  #cercle1,
-  #cercle2,
-  #cercle3 {
-    width: 100px;
-    height: 100px;
-    border-radius: 200px;
-  }
-
-  .container_presentation h2,
-  .competences h2 {
-    font-size: 1.2rem;
-  }
-
-  .presentation {
-    height: 73%;
-  }
-
-  .presentation p {
-    font-size: 0.8rem !important;
-  }
-
-  .container_presentation {
-    padding-left: 0.6%;
-    /* padding-right: 0.8%; */
-/* }
-
-  .CV {
-    height: 10rem;
-  }
-
-  .CV h2 {
-    font-size: 1.2rem;
-  }
-} */
-
-
-/* @media screen and (max-width: 370px) {
-  h1 {
-    font-size: 2rem !important;
-  }
-
-  .presentation p {
-    font-size: 0.7rem !important;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  h1 {
-    font-size: 1.8rem !important;
-  }
-
-  .background_presentation {
-    height: 20rem;
-  }
-
-  .container_presentation {
-    top: 7%;
-    height: 85%;
-  }
-
-  .presentation {
-    height: 80%;
-  }
-
-  .presentation p {
-    margin-top: 1%;
-    font-size: 0.75rem !important;
-  }
-
-  .block_competences {
-    height: 17rem !important;
-  }
-
-  .competences {
-    top: 15% !important;
-    height: 70%;
-  }
-
-  #languages_skills {
-    height: 75% !important;
-  }
-}
-
-@media screen and (max-width: 322px) {
-  .container_nom h1 {
-    font-size: 1.8rem !important;
-  }
-} */

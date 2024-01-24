@@ -73,6 +73,10 @@ footer a {
         width: 14px;
         height: 14px;
     }
+
+    hr {
+        margin-top: 50px;
+    }
 }
 
 /* md */
