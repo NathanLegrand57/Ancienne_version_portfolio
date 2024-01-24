@@ -64,13 +64,40 @@ footer a {
 @media (max-width: 1440px) {}
 
 /* lg */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
+}
 
 /* md */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    footer p {
+        font-size: 0.7rem;
+    }
+
+    svg {
+        width: 12px;
+        height: 12px;
+    }
+}
 
 /* sm */
 @media (max-width: 640px) {}
 
 /* xs */
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+    footer p {
+        font-size: 0.6rem;
+    }
+
+    svg {
+        width: 10px;
+        height: 10px;
+    }
+}

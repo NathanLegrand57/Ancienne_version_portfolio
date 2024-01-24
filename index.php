@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <p id="top_page"></p>
     <?php
     require("navbar.php");
     ?>
@@ -24,6 +23,7 @@
             <p>BTS SIO - Spécialité SLAM</p>
         </div>
     </div>
+    
     <div class="presentation_container responsive">
 
         <div class="presentation ">
